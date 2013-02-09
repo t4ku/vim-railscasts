@@ -72,7 +72,7 @@ endfunction
 " General colors
 call s:highlight("Normal", 7, 0, "NONE")
 call s:highlight("NonText", 8, "NONE", "NONE")
-call s:highlight("SpecialKey", "NONE", 13, "NONE")
+call s:highlight("SpecialKey", 8, "NONE", "NONE")
 
 "call s:highlight("Cursor", 0, 7, "reverse")
 call s:highlight("LineNr", 8, 13, "NONE")
@@ -160,6 +160,11 @@ hi link SpecialChar     Special
 hi link SpecialComment  Special
 hi link Debug           Special
 
+"vimdiff
+hi DiffAdd    ctermbg =52  "red
+hi DiffDelete ctermbg =18 "blue
+hi DiffChange ctermbg =58 "brown
+hi DiffText   ctermbg =22 "green
 
 " Special for Ruby
 hi link rubyClass                   Orange     " class
